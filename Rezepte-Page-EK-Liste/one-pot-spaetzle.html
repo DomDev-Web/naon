@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/food.css">
+    <title>one-pot-spaetzle-mit-haehnchen</title>
+</head>
+<script>
+    function calculate(){
+        first.innerHTML = `${+portions.value * 125}g Hähnchenbrustfilet`;
+        second.innerHTML = `${+portions.value * 0.25} Stange/n Lauch`;
+        third.innerHTML = `${ +portions.value * 0.5} Möhre/n`;
+        fourth.innerHTML = `${+portions.value * 0.25} EL Pflanzenöl`;
+        fifth.innerHTML = `${+portions.value * 0.25} TL Tomatenmark`;
+        sixth.innerHTML = `${+portions.value * 0.25} EL Sambal Oelek`;
+        seventh.innerHTML = `${+portions.value * 25}ml Sahne`;
+        eighth.innerHTML = `${+portions.value * 60}ml Geflügelbrühe`;
+        ninth.innerHTML = `${+portions.value * 150}g frische Spätzle`;
+        tenth.innerHTML = `${+portions.value * 1} EL geriebenen Gouda`;
+        eleventh.innerHTML = `${+portions.value * 1} prise/n Salz&Pfeffer`;
+        twelfth.innerHTML = `${+portions.value * 1} TL gehackte Petersilie`;
+    }
+</script>
+<body>
+    <body>
+        <div class="navigation">
+            <div>
+                <img class="logo" src="/img/1200px-Rewe_-_Dein_Markt_Logo.svg.png" alt="" />
+            </div>
+            <div class="navigation-bar">
+                <ul class="hover-list">
+                    <li><a class="hover-list" href="index.html">Rezepte</a></li>
+                    <li><a class="hover-list" href="liste.html">Einkauf</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        <div class="headline">
+            <h1>One Pot Spätzle Mit Hähnchen</h1>
+        </div>
+
+        <div class="middle">
+            <img src="img/one-pot-spaetzle-mit-haehnchen.jpg" alt="">
+        </div>
+        <div class="middle-head">
+            <h2>Für wie viele Leute möchtest du denn dieses Essen zubereiten?</h2>
+        </div>
+        <div class="push">
+            <input id="portions" type="number" placeholder="Eine Portion">
+            <button onclick="calculate()">Portionieren</button>
+        </div>
+        <div class="ingredients">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zutaten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td id="first">125g Hähnchenbrustfilet</td></tr>
+                    <tr><td id="second">0.25 Stange/n Lauch</td></tr>
+                    <tr><td id="third">0.5 Möhre/n</td></tr>
+                    <tr><td id="fourth">0.25 EL Pflanzenöl</td></tr>
+                    <tr><td id="fifth">0.25 TL Tomatenmark</td></tr>
+                    <tr><td id="sixth">0.25 EL Sambal Oelek</td></tr>
+                    <tr><td id="seventh">25ml Sahne</td></tr>
+                    <tr><td id="eighth">60ml Geflügelbrühe</td></tr>
+                    <tr><td id="ninth">150g frische Spätzle</td></tr>
+                    <tr><td id="tenth">1 EL geriebenen Gouda</td></tr>
+                    <tr><td id="eleventh">1 prise/n Salz&Pfeffer</td></tr>
+                    <tr><td id="twelfth">1 TL gehackte Petersilie</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="description">
+            <p>1. Hähnchen trocken tupfen und in Würfel schneiden. Lauch waschen, putzen und in feine Ringe schneiden, Möhren schälen, waschen und in kleine Würfel schneiden. Öl in einem Topf erhitzen und Hähnchen darin ca. 2 Minuten anbraten.
+            </p>
+            <p>2. Lauch und Möhren zugeben und weitere ca. 2 Minuten braten. Tomatenmark und Sambal Oelek zugeben, kurz mitbraten und mit Sahne und Brühe ablöschen. Spätzle zugeben und ca. 2 Minuten köcheln lassen.</p>
+            <p>3. One-Pot-Spätzle mit Käse verfeinern, mit Salz und Pfeffer abschmecken und mit Petersilie bestreut servieren.</p>
+        </div>
+    </div>
+</body>
+</html>

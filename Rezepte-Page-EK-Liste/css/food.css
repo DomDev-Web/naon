@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    background: url(/img/wood-2045380_1920.jpg);
+  }
+  
+  .navigation {
+    box-shadow: 5px 15px 30px 4px rgba(0, 0, 0, 0.45);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  
+  .logo {
+    width: 200px;
+    padding-right: 50px;
+  }
+  
+  .hover-list {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hover-list li {
+    font-size: 30px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f0f0f0;
+    transition: transform 0.5s ease;
+  }
+  
+  .hover-list li:hover {
+    transform: translateY(-20px);
+    background-color: #e0e0e0;
+    color: red;
+  }
+
+  .headline{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    text-align: center;
+  }
+
+  .middle{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .middle-head{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    text-align: center;
+  }
+
+  .push {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  table{
+    font-size: 25px;
+    width: 20%;
+    text-align: center;
+    box-shadow: rgb(102, 102, 102)2px 2px 5px;
+    background: linear-gradient(rgb(235, 215, 173), rgb(192, 191, 189));
+    margin: 5% auto
+  }
+
+  table,th, td{
+    border-collapse:collapse ;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .description {
+    color: white;
+    margin-left: 33%;
+    margin-right: 33%;
+    width: 33%;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.61);
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/liste.css" />
+    <title>Einkaufliste</title>
+  </head>
+  <script>
+    function sendConsoleLog() {
+      let name = document.getElementById("name").value;
+      let number = document.getElementById("number").value;
+      document.getElementById(
+        "container"
+      ).innerHTML += `<h2>${name} x  ${number}</h2>`;
+    }
+  </script>
+  <body>
+    <div class="navigation">
+      <div>
+        <img
+          class="logo"
+          src="/img/1200px-Rewe_-_Dein_Markt_Logo.svg.png"
+          alt=""
+        />
+      </div>
+      <div class="navigation-bar">
+        <ul class="hover-list">
+          <a class="hover-list" href="index.html"><li>Rezepte</li></a>
+          <a class="hover-list" href="liste.html"><li>Einkauf</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div>
+        <h1>Einkaufliste</h1>
+      </div>
+    </div>
+    <div class="inner_container">
+      <input id="name" type="text" placeholder="Artikel..." />
+      <input id="number" type="number" placeholder="Anzahl..." />
+      <button onclick="sendConsoleLog()">Eintragen</button>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>

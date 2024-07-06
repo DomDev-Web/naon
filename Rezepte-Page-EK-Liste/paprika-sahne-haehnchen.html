@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/food.css">
+    <title>paprika-sahne-haehnchen</title>
+</head>
+<script>
+    function calculate(){
+        first.innerHTML = `${+portions.value * 1} Hähnchenbrustfilet(s)`;
+        second.innerHTML = `${+portions.value * 0.5} Paprikaschote(n),rot`;
+        third.innerHTML = `${ +portions.value * 0.25} Paprikaschote(n),grün`;
+        fourth.innerHTML = `${+portions.value * 0.25} Zwiebel(n)`;
+        fifth.innerHTML = `${+portions.value * 1} Zehe Knoblauch`;
+        sixth.innerHTML = `${+portions.value * 0.25} Chilischote`;
+        seventh.innerHTML = `${+portions.value * 50}ml Sahne`;
+        eighth.innerHTML = `${+portions.value * 50}g Schmand`;
+        ninth.innerHTML = `${+portions.value * 0.25} TL Tomatenmark`;
+        tenth.innerHTML = `${+portions.value * 35}ml Gemüsebrühe`;
+        eleventh.innerHTML = `${+portions.value * 0.25} EL Paprikapulver, edelsüß`;
+        twelfth.innerHTML = `${+portions.value * 0.25} TL Paprikapulver, rosenscharf`;
+        thirteenth.innerHTML = `${+portions.value * 25}g geriebener Käse`;
+    }
+</script>
+<body>
+    <body>
+        <div class="navigation">
+            <div>
+                <img class="logo" src="/img/1200px-Rewe_-_Dein_Markt_Logo.svg.png" alt="" />
+            </div>
+            <div class="navigation-bar">
+                <ul class="hover-list">
+                    <li><a class="hover-list" href="index.html">Rezepte</a></li>
+                    <li><a class="hover-list" href="liste.html">Einkauf</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="headline">
+            <h1>Paprika Sahne Hähnchen</h1>
+        </div>
+        <div class="middle">
+            <img src="img/paprika-sahne-haehnchen.jpg" alt="">
+        </div>
+        <div class="middle-head">
+            <h2>Für wie viele Leute möchtest du denn dieses Essen zubereiten?</h2>
+        </div>
+        <div class="push">
+            <input id="portions" type="number" placeholder="Eine Portion">
+            <button onclick="calculate()">Portionieren</button>
+        </div>
+        <div class="ingredients">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zutaten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td id="first">1 Hähnchenbrustfilet(s)</td></tr>
+                    <tr><td id="second">0.5 Paprikaschote(n),rot</td></tr>
+                    <tr><td id="third">0.25 Paprikaschote(n),grün</td></tr>
+                    <tr><td id="fourth">0.25 Zwiebel(n)</td></tr>
+                    <tr><td id="fifth">1 Zehe Knoblauch</td></tr>
+                    <tr><td id="sixth">0.25 Chilischote</td></tr>
+                    <tr><td id="seventh">50ml Sahne</td></tr>
+                    <tr><td id="eighth">50g Schmand</td></tr>
+                    <tr><td id="ninth">0.25 TL Tomatenmark</td></tr>
+                    <tr><td id="tenth">35ml Gemüsebrühe</td></tr>
+                    <tr><td id="eleventh">0.25EL Paprikapulver, edelsüß</td></tr>
+                    <tr><td id="twelfth">0.25TL Paprikapulver, rosenscharf</td></tr>
+                    <tr><td id="thirteenth">25g geriebener Käse</td></tr>
+                    <tr><td id="fourteenth">Öl</td></tr>
+                    <tr><td id="fifteenth">Nach belieben Salz&Pfeffer</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="description">
+            <p>Die Hähnchenfilets waschen und mit Küchenkrepp trocken tupfen. Mit Salz und Paprikapulver würzen und in einer Auflaufform dicht aneinanderlegen. Die Paprikaschoten waschen, entkernen, in schmale Streifen schneiden und auf den Filets verteilen.</p>
+            <p>Die Zwiebel in halbe Ringe schneiden und in einer Pfanne in etwas Öl andünsten. Die Chilischote hineinzupfen, den Knoblauch pressen und hinzugeben. Paprikapulver und Tomatenmark hinzufügen, mit der Brühe ablöschen und kurz aufkochen lassen. Anschließend Sahne und Schmand unter die Soße rühren und mit Salz abschmecken. Die Soße in die Auflaufform gießen, Fleisch und Paprikastreifen sollten ganz bedeckt sein. Den geriebenen Käse gleichmäßig darauf verteilen.</p>
+            <p>Im vorgeheizten Backofen bei 180 °C Ober-/Unterhitze ca. 1/2 Std. garen.</p>
+            <p>Passend dazu: Nudeln oder Reis</p>
+        </div>
+</body>
+</html>
