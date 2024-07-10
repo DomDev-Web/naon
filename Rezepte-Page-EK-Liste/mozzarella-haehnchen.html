@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/food.css">
-    <title>one-pot-spaetzle-mit-haehnchen</title>
+    <title>mozzarella-haehnchen-in-basilikum-sahnesauce</title>
 </head>
 <script>
     function calculate(){
-        first.innerHTML = `${+portions.value * 1} Hähnchenbrustfilet(s)`;
-        second.innerHTML = `${+portions.value * 0.25} EL Öl`;
-        third.innerHTML = `${ +portions.value * 65}g Cocktailtomaten`;
-        fourth.innerHTML = `${+portions.value * 50}g Sahne`;
-        fifth.innerHTML = `${+portions.value * 25}g Sahneschmelzkäse`;
-        sixth.innerHTML = `${+portions.value * 35}g Mozzarella`;
-        eighth.innerHTML = `${+portions.value * }g Mozzarella`;
-        tenth.innerHTML = `${+portions.value * 0.25} EL Kräuterbutter`;
-        eleventh.innerHTML = `${+portions.value * 0.25} Bund Basilikum`;
-    }
+        let portions = document.getElementById('portions').value;
+        let zutaten = document.getElementById('zutaten');
+        zutaten.innerHTML = `
+            <tr><td>${portions * 1 }Hähnchenbrustfilet(s)</td></tr>
+            <tr><td>${portions * 0.25} EL ÖL</td></tr>
+            <tr><td>${portions * 65}g Cocktailtomaten</td></tr>
+            <tr><td>${portions * 50}g Sahne</td></tr>
+            <tr><td>${portions * 25}g Sahneschmelzkäse</td></tr>
+            <tr><td>${portions * 35}g Mozzarella</td></tr>
+            <tr><td>Nach belieben Parmesan</td></tr>
+            <tr><td>${portions * 0.25} EL Kräuterbutter, optional</td></tr>
+            <tr><td>${portions * 0.25} Bund Basilikum</td></tr>
+            <tr><td>Salz&Pfeffer</td></tr>
+            <tr><td>Etwas Fett für die Form</td></tr>
+        `}
+    
 </script>
-<body>
-    <body>
+<body>   
         <div class="navigation">
             <div>
                 <img class="logo" src="/img/1200px-Rewe_-_Dein_Markt_Logo.svg.png" alt="" />
@@ -54,18 +59,18 @@
                         <th>Zutaten</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr><td id="first">1 Hähnchenbrustfilet(s)</td></tr>
-                    <tr><td id="second">0.25 EL ÖL</td></tr>
-                    <tr><td id="third">65g Cocktailtomaten</td></tr>
-                    <tr><td id="fourth">50g Sahne</td></tr>
-                    <tr><td id="fifth">25g Sahneschmelzkäse</td></tr>
-                    <tr><td id="sixth">35g Mozzarella</td></tr>
-                    <tr><td id="seventh">Nach belieben Parmesan</td></tr>
-                    <tr><td id="eighth">0.25 EL Kräuterbutter, optional</td></tr>
-                    <tr><td id="ninth">0.25 Bund Basilikum</td></tr>
-                    <tr><td id="tenth">Salz&Pfeffer</td></tr>
-                    <tr><td id="eleventh">Etwas Fett für die Form</td></tr>
+                <tbody id="zutaten">
+                    <tr><td>1 Hähnchenbrustfilet(s)</td></tr>
+                    <tr><td>0.25 EL ÖL</td></tr>
+                    <tr><td>65g Cocktailtomaten</td></tr>
+                    <tr><td>50g Sahne</td></tr>
+                    <tr><td>25g Sahneschmelzkäse</td></tr>
+                    <tr><td>35g Mozzarella</td></tr>
+                    <tr><td>Nach belieben Parmesan</td></tr>
+                    <tr><td>0.25 EL Kräuterbutter, optional</td></tr>
+                    <tr><td>0.25 Bund Basilikum</td></tr>
+                    <tr><td>Salz&Pfeffer</td></tr>
+                    <tr><td>Etwas Fett für die Form</td></tr>
                 </tbody>
             </table>
         </div>
@@ -79,6 +84,5 @@
             <p>Im vorgeheizten Ofen bei 200 °C Ober-/Unterhitze bzw. 175 °C Umluft ca. 30 Min. backen. Herausnehmen und mit restlichem Basilikum bestreuen.</p>
             <p>Dazu schmecken Kroketten oder Reis.</p>
         </div>
-    </div>
 </body>
 </html>

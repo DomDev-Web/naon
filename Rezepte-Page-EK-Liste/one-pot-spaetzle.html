@@ -8,18 +8,22 @@
 </head>
 <script>
     function calculate(){
-        first.innerHTML = `${+portions.value * 125}g Hähnchenbrustfilet`;
-        second.innerHTML = `${+portions.value * 0.25} Stange/n Lauch`;
-        third.innerHTML = `${ +portions.value * 0.5} Möhre/n`;
-        fourth.innerHTML = `${+portions.value * 0.25} EL Pflanzenöl`;
-        fifth.innerHTML = `${+portions.value * 0.25} TL Tomatenmark`;
-        sixth.innerHTML = `${+portions.value * 0.25} EL Sambal Oelek`;
-        seventh.innerHTML = `${+portions.value * 25}ml Sahne`;
-        eighth.innerHTML = `${+portions.value * 60}ml Geflügelbrühe`;
-        ninth.innerHTML = `${+portions.value * 150}g frische Spätzle`;
-        tenth.innerHTML = `${+portions.value * 1} EL geriebenen Gouda`;
-        eleventh.innerHTML = `${+portions.value * 1} prise/n Salz&Pfeffer`;
-        twelfth.innerHTML = `${+portions.value * 1} TL gehackte Petersilie`;
+        let portions = document.getElementById('portions').value;
+        let zutaten = document.getElementById('zutaten');
+        zutaten.innerHTML = `
+                    <tr><td>${portions * 125} g Hähnchenbrustfilet</td></tr>
+                    <tr><td>${portions * 0.25} Stange/n Lauch</td></tr>
+                    <tr><td>${portions * 0.5 } Möhre/n</td></tr>
+                    <tr><td>${portions * 0.25} EL Pflanzenöl</td></tr>
+                    <tr><td>${portions * 0.25} TL Tomatenmark</td></tr>
+                    <tr><td>${portions * 0.25} EL Sambal Oelek</td></tr>
+                    <tr><td>${portions * 25} ml Sahne</td></tr>
+                    <tr><td>${portions * 60 } ml Geflügelbrühe</td></tr>
+                    <tr><td>${portions * 150} g frische Spätzle</td></tr>
+                    <tr><td>${portions * 1 } EL geriebenen Gouda</td></tr>
+                    <tr><td>${portions * 1 } prise/n Salz&Pfeffer</td></tr>
+                    <tr><td>${portions * 1 } TL gehackte Petersilie</td></tr>
+        `
     }
 </script>
 <body>
@@ -57,19 +61,19 @@
                         <th>Zutaten</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr><td id="first">125g Hähnchenbrustfilet</td></tr>
-                    <tr><td id="second">0.25 Stange/n Lauch</td></tr>
-                    <tr><td id="third">0.5 Möhre/n</td></tr>
-                    <tr><td id="fourth">0.25 EL Pflanzenöl</td></tr>
-                    <tr><td id="fifth">0.25 TL Tomatenmark</td></tr>
-                    <tr><td id="sixth">0.25 EL Sambal Oelek</td></tr>
-                    <tr><td id="seventh">25ml Sahne</td></tr>
-                    <tr><td id="eighth">60ml Geflügelbrühe</td></tr>
-                    <tr><td id="ninth">150g frische Spätzle</td></tr>
-                    <tr><td id="tenth">1 EL geriebenen Gouda</td></tr>
-                    <tr><td id="eleventh">1 prise/n Salz&Pfeffer</td></tr>
-                    <tr><td id="twelfth">1 TL gehackte Petersilie</td></tr>
+                <tbody id="zutaten">
+                    <tr><td>125g Hähnchenbrustfilet</td></tr>
+                    <tr><td>0.25 Stange/n Lauch</td></tr>
+                    <tr><td>0.5 Möhre/n</td></tr>
+                    <tr><td>0.25 EL Pflanzenöl</td></tr>
+                    <tr><td>0.25 TL Tomatenmark</td></tr>
+                    <tr><td>0.25 EL Sambal Oelek</td></tr>
+                    <tr><td>25ml Sahne</td></tr>
+                    <tr><td>60ml Geflügelbrühe</td></tr>
+                    <tr><td>150g frische Spätzle</td></tr>
+                    <tr><td>1 EL geriebenen Gouda</td></tr>
+                    <tr><td>1 prise/n Salz&Pfeffer</td></tr>
+                    <tr><td>1 TL gehackte Petersilie</td></tr>
                 </tbody>
             </table>
         </div>

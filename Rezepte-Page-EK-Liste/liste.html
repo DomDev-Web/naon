@@ -7,7 +7,7 @@
     <title>Einkaufliste</title>
   </head>
   <script>
-    function sendConsoleLog() {
+    function sendContainer() {
       let name = document.getElementById("name").value;
       let number = document.getElementById("number").value;
       document.getElementById(
@@ -40,7 +40,7 @@
     <div class="inner_container">
       <input id="name" type="text" placeholder="Artikel..." />
       <input id="number" type="number" placeholder="Anzahl..." />
-      <button onclick="sendConsoleLog()">Eintragen</button>
+      <button onclick="sendContainer()">Eintragen</button>
     </div>
     <div id="container"></div>
   </body>
